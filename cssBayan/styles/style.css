@@ -33,8 +33,9 @@ body {
   margin-right: 0.9rem;
   transition: all 0.3s;
 }
-/* .accord_pict {
-  width: 0;
-  height: 0;
+.accord_pict {
+  /* width: 100px;
+  height: 100px; */
+  width: 100%;
   transition: all 0.4s;
-} */
+}

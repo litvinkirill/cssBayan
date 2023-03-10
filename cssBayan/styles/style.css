@@ -32,10 +32,44 @@ body {
   height: 25px;
   margin-right: 0.9rem;
   transition: all 0.3s;
+  transform: rotate(45deg);
 }
 .accord_pict {
-  /* width: 100px;
-  height: 100px; */
-  width: 100%;
+  width: 0;
+  height: 0;
   transition: all 0.4s;
+}
+.accord__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.9rem 0 0 0.9rem;
+  color:rgb(14, 14, 192);
+  transition: all 0.4s;
+}
+.wrap_accord__item {
+  background-color: #e3dcdc;
+}
+.accord__input:checked~label .accord_pict,
+.wrap_accord__item:hover .accord_pict {
+  width: 50%;
+  height: 50%;
+  padding: 10px 0;
+}
+.accord__input:checked~label .arrow_btn,
+.wrap_accord__item:hover .arrow_btn {
+  transform: rotate(-90deg);
+}
+.accord__input:checked~label .accord__title{
+  color: black;
+}
+.wrap_accord__item,
+.accord__btn,
+.accord_pict {
+  cursor: pointer;
+}
+.wrapper:hover .accord__title {
+  color: black;
+}
+.wrapper:hover .arrow_btn {
+  background: url('../assets/closehamburger.svg') center/cover no-repeat;
 }

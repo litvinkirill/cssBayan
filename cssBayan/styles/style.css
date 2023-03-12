@@ -120,3 +120,25 @@ h1 {
     text-shadow: 0.05rem 0.05rem 0.1rem black;
   }
 }
+@media (max-width: 320px) {
+  .header {
+    margin-top: 5vh;
+  }
+  .header,
+  .wrapper {
+    max-width: 90vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .item__title {
+    font-size: 0.8rem;
+  }
+  .arrow {
+    margin-right: 0.5rem;
+  }
+  .accordion__input:checked~label .img {
+    width: 90%;
+    height: 90%;
+  }
+}
